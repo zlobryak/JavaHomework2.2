@@ -4,10 +4,10 @@ public class Main {
         int balance = 100; //  Начальный баланс
         int cacheInn = 1001; // Входящаяя сумма
         int cacheBonus = 0; //  Сколько будет начисленно бонусов
-        int treshold = 1000; // Граничное значение минимаьной суммы для начилсения бонусов
+        int threshold = 1000; // Граничное значение минимаьной суммы для начилсения бонусов
         int bonusFactor = 100; // За сколько рублей начисляется 1 рубль бонуса
 
-        if (cacheInn > treshold) {
+        if (cacheInn > threshold) {
             cacheBonus = cacheInn / bonusFactor;
         }
         balance = balance + cacheInn + cacheBonus;
